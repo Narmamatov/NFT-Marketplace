@@ -1,0 +1,331 @@
+@media (max-width: 1104px) {
+  .bImg {
+    position: relative;
+    width: 350px;
+    height: 506px;
+    margin-left: -68px;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .photoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .photoInput input {
+    width: 87%;
+  }
+  .photoInput button {
+    margin: 0;
+    width: 95%;
+  }
+  .week img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 834px) {
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 100%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .begin {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .bInfo {
+    gap: 15px;
+  }
+  .creInfo {
+    margin-inline: 30px;
+  }
+  .cImg:last-child {
+    display: none;
+  }
+  .creInfo h1 {
+    font-size: clamp(30px, 5vw, 67px);
+    margin: 73px 0 10px 0;
+  }
+  .creInfo p {
+    font-size: clamp(15px, 2vw, 22px);
+  }
+  .bImg .sky {
+    background-color: #3b3b3b;
+    padding-bottom: 100px;
+    border-radius: 20px;
+    width: 350px;
+  }
+  .cateBox:nth-last-child(-n + 2) {
+    display: none;
+  }
+  .discover:last-child {
+    display: none;
+  }
+  .time {
+    margin-right: -100px;
+    margin-top: 40px;
+  }
+  .stored {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .bImg {
+    position: relative;
+    width: 350px;
+    height: 383px;
+    margin: 0;
+  }
+  .bImg h2 {
+    position: absolute;
+    bottom: 66px;
+    left: 20px;
+  }
+  .profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-weight: 100;
+    font-size: 18px;
+    gap: 10px;
+    bottom: 25px;
+    left: 20px;
+  }
+
+  .artist .about:nth-last-child(-n + 6) {
+    display: none;
+  }
+  .artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  .about {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .about h2 {
+    text-align: justify;
+  }
+  .browse h1 {
+    font-size: clamp(30px, 5vw, 67px);
+    margin: 73px 0 10px 20px;
+  }
+  .categories {
+    padding: 20px;
+  }
+  .humann {
+    left: -20px;
+  }
+  .mashBtn {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 783px) {
+  #begin {
+    display: flex;
+    flex-direction: column;
+  }
+  .bInfo h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .bInfo {
+    gap: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: flex-start;
+  }
+  .cInfo {
+    width: 300px;
+  }
+  .cInfo h1 {
+    width: 300px;
+  }
+  .photoInput input {
+    font-size: 14px;
+  }
+  .photoInput button {
+    font-size: 14px;
+    gap: 5px;
+  }
+  .week img {
+    width: 60%;
+  }
+}
+@media (max-width: 716px) {
+  .artist {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .about {
+    width: 90%;
+  }
+  #header {
+    gap: 15%;
+  }
+
+  .footInput {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .footInput input {
+    width: 90%;
+    margin: 0;
+  }
+  .footInput button {
+    width: 98%;
+    margin: 0;
+  }
+  .infoBtn button {
+    display: none;
+  }
+}
+@media (max-width: 540px) {
+  .week {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    background-color: #2b2b2b;
+  }
+  .week img {
+    width: 90%;
+  }
+  .photoInfo {
+    margin-left: 10px;
+  }
+  .about img {
+    width: 110px;
+  }
+  #header {
+    gap: 0%;
+  }
+}
+@media (max-width: 420px) {
+  .bImg {
+    margin: 0 0 0 -30px;
+  }
+  .sale,
+  .auctions,
+  .artists {
+    font-size: 115%;
+  }
+  #header {
+    width: 90%;
+  }
+  .stored {
+    gap: 15px;
+  }
+  .image {
+    width: 120px;
+  }
+  .up {
+    width: 120px;
+  }
+  .cateBox {
+    position: relative;
+    width: 130px;
+    height: 195px;
+  }
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .cateInfo h1 {
+    margin: 90px 0 30px 0;
+  }
+  .browse h1 {
+    margin: 39px 0 34px 17px;
+  }
+  .discover {
+    width: 300px;
+  }
+  .discover img {
+    width: 300px;
+  }
+  .human img {
+    width: 30px;
+  }
+}
+
+@media (max-width: 341px) {
+  .bImg .sky {
+    width: 293px;
+  }
+  .bImg {
+    height: 341px;
+    width: 300px;
+  }
+  #basic {
+    width: 291px;
+    height: 265px;
+  }
+  .small img {
+    width: 90px;
+  }
+  .cImg:nth-last-child(-n + 2) {
+    display: none;
+  }
+  .cInfo {
+    margin: 0;
+  }
+  .cInfo h1 {
+    font-size: 22px;
+    width: 240px;
+  }
+  .cInfo p {
+    width: 230px;
+  }
+  .infoBtn p {
+    font-size: 14px;
+  }
+  .about {
+    height: 116px;
+  }
+  .about img {
+    width: 90px;
+  }
+}

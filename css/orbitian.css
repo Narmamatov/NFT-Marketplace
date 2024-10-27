@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+  font-family: sans-serif;
+  color: white;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  width: 110%;
+  z-index: 50;
+  top: 0;
+  padding: 2% 4%;
+  backdrop-filter: blur(1vh);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0;
+  background-color: #3b3b3b blur(2vh);
+}
+.burger {
+  position: relative;
+  margin-top: -20px;
+}
+.open {
+  position: absolute;
+  display: none;
+}
+.close {
+  position: absolute;
+  display: none;
+}
+button:hover {
+  background: cyan;
+  box-shadow: 0 0 50px #1e9bff, 0 0 50px #1e9bff, 0 0 5px #1e9bff,
+    0 0 10px #1e9bff, 0 0 50px #1e9bff;
+  cursor: pointer;
+}
+nav {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+nav a:active {
+  transform: scale(0.9);
+  color: red;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s ease-in-out;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav span {
+  font-size: 28px;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #a259ff;
+}
+
+.orbitians-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orb-img {
+  width: 100%;
+  margin-top: 115px;
+}
+
+.orbit-left h1 {
+  font-size: 51px;
+  font-weight: 600;
+  color: white;
+  margin-top: 30px;
+}
+.orbit-left h1 span {
+  font-weight: 400;
+  font-size: 18px;
+  color: #858584;
+}
+.orbit-left h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #858584;
+  margin: 20px 0;
+}
+.orb-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.orb-block p {
+  font-weight: 600;
+  font-size: 22px;
+  color: white;
+}
+.orbit-left p {
+  color: #858584;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.details p {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.tags button {
+  padding: 10px 15px;
+  background-color: #3b3b3b;
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+
+.orbit-right {
+  width: 295px;
+  height: 234px;
+  padding: 30px 0px 0px 0px;
+  border-radius: 20px;
+  background-color: #3b3b3b;
+}
+
+.orbit-right p {
+  color: white;
+  margin-left: 50px;
+}
+
+.orbit-right button {
+  font-size: 16px;
+  font-weight: 600;
+  width: 235px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: #7f45ff;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.time-display {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#nft {
+  background-color: #2c2f33;
+}
+
+.nft-nav {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3b3b3b;
+  font-size: 22px;
+  font-weight: 600;
+  color: #858584;
+  transition: 0.7s;
+}
+.nft-nav p:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.nft-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.nft-card {
+  background-color: #23272a;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.nft-card:hover {
+  transform: scale(1.05);
+}
+
+.nft-m {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.nft-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.nft-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nft-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #b0b0b0;
+}
+
+.nft-dis {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-dis p span {
+  color: white;
+  font-size: 18px;
+}
+
+.nft-ava {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.nft-ava img {
+  width: 24px;
+  height: 24px;
+}
+
+.navig {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px 0 50px 0px;
+}
+.navig p {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+.navig button {
+  width: 268px;
+  height: 60px;
+  border-radius: 20px;
+  border: 2px solid #7f45ff;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#footer {
+  background-color: #3b3b3b;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid #858584;
+}
+.fNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 40px;
+}
+.fNav a {
+  color: #cccccc;
+  font-weight: 600;
+}
+.footIcons {
+  display: flex;
+  color: #cccccc;
+  gap: 10px;
+}
+.footIcons span {
+  font-size: clamp(10px, 6vw, 24px);
+}
+.footNav2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footNav2 a:first-child {
+  font-weight: 600;
+  font-size: clamp(13px, 4vw, 22px);
+  color: #ffffff;
+}
+.footNav2 a {
+  font-size: clamp(10px, 4vw, 16px);
+  color: #cccccc;
+}
+.footInput {
+  display: flex;
+}
+.footInput input {
+  width: 220px;
+  padding: 13px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+.footInput button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #a259ff;
+  color: white;
+  margin-left: -40px;
+  margin-top: 1px;
+  font-size: 18px;
+  gap: 20px;
+  height: 48px;
+  width: 204px;
+  border-radius: 20px;
+}
+.address {
+  width: 61%;
+  margin: auto;
+  margin-top: 15px;
+}
+@media (max-width: 1300px) {
+  .orbitians-content {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1134px) {
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 93%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .navig p {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+  }
+}
+@media (max-width: 834px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footInput {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .orbitians-content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+  }
+  #header {
+    width: 92%;
+    justify-content: space-around;
+    gap: 7%;
+  }
+  .nft-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 14px;
+    padding: 16px;
+}
+}

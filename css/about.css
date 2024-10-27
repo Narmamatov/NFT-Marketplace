@@ -1,0 +1,419 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+  font-family: sans-serif;
+  color: white;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  width: 110%;
+  z-index: 50;
+  top: 0;
+  padding: 2% 4%;
+  backdrop-filter: blur(1vh);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0;
+  background-color: #3b3b3b blur(2vh);
+}
+.burger {
+  position: relative;
+  margin-top: -20px;
+}
+.open {
+  position: absolute;
+  display: none;
+}
+.close {
+  position: absolute;
+  display: none;
+}
+nav {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav span {
+  font-size: 28px;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #a259ff;
+}
+
+.animakid-logo {
+  width: 100%;
+}
+
+.animakid-ava {
+  margin-left: 100px;
+  margin-top: -70px;
+}
+
+.animakid-contents {
+  display: flex;
+  gap: 600px;
+  margin-top: 40px;
+}
+
+.animakid-left h1 {
+  font-size: 51px;
+  font-weight: 600;
+  color: white;
+}
+
+.ani-blocks {
+  display: flex;
+  gap: 50px;
+}
+
+.ani-block p {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin: 30px 0;
+}
+.ani-block p span {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.animakid-left p {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #858584;
+}
+
+.animakid-left p span {
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 70px;
+}
+
+.ani-socials {
+  margin-top: 30px;
+}
+
+.ani-btns {
+  display: flex;
+  align-items: center;
+}
+
+.copy {
+  width: 186px;
+  height: 60px;
+  border-radius: 20px;
+  color: white;
+  background-color: #a259ff;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.plus {
+  width: 145px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+  border: 2px solid #7f45ff;
+  background: transparent;
+  margin-left: 30px;
+}
+
+.nft-nav {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3b3b3b;
+  font-size: 22px;
+  font-weight: 600;
+  color: #858584;
+  transition: 0.7s;
+}
+.nft-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #2c2f33;
+}
+
+.nft-card {
+  background-color: #23272a;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.nft-m {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.nft-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.nft-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nft-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #b0b0b0;
+}
+
+.nft-dis {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-dis p span {
+  color: white;
+  font-size: 18px;
+}
+
+.nft-ava {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.nft-ava img {
+  width: 24px;
+  height: 24px;
+}
+
+#footer {
+  background-color: #3b3b3b;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid #858584;
+}
+.fNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 40px;
+}
+.fNav a {
+  color: #cccccc;
+  font-weight: 600;
+}
+.footIcons {
+  display: flex;
+  color: #cccccc;
+  gap: 10px;
+}
+.footIcons span {
+  font-size: clamp(10px, 6vw, 24px);
+}
+.footNav2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footNav2 a:first-child {
+  font-weight: 600;
+  font-size: clamp(13px, 4vw, 22px);
+  color: #ffffff;
+}
+.footNav2 a {
+  font-size: clamp(10px, 4vw, 16px);
+  color: #cccccc;
+}
+.footInput {
+  display: flex;
+}
+.footInput input {
+  width: 220px;
+  padding: 13px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+.footInput button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #a259ff;
+  color: white;
+  margin-left: -40px;
+  margin-top: 1px;
+  font-size: 18px;
+  gap: 20px;
+  height: 48px;
+  width: 204px;
+  border-radius: 20px;
+}
+.address {
+  width: 61%;
+  margin: auto;
+  margin-top: 15px;
+}
+@media (max-width: 1225px) {
+  .animakid-contents {
+    display: flex;
+    gap: 293px;
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 1114px) {
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 100%;
+    justify-content: space-around;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .animakid-contents {
+    display: flex;
+    gap: 0px;
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footInput {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footInput input {
+    width: 90%;
+    margin: 0;
+  }
+  .footInput button {
+    width: 98%;
+    margin: 0;
+  }
+  .infoBtn button {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .animakid-logo {
+    width: 100%;
+    height: 200px;
+  }
+  .animakid-contents {
+    display: flex;
+    gap: 0px;
+    margin-top: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+  }
+  .ani-btns {
+    display: flex;
+    margin: 38px 0;
+    align-items: center;
+  }
+  .animakid-ava {
+    margin-left: 200px;
+    margin-top: -72px;
+  }
+}
+@media (max-width: 600px) {
+  .animakid-ava {
+    margin-left: 100px;
+    margin-top: -72px;
+  }
+}
+@media (max-width: 400px) {
+  .animakid-logo {
+    width: 100%;
+    height: 200px;
+  }
+  .plus {
+    width: 145px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #7f45ff;
+    background: transparent;
+    margin-left: 6px;
+  }
+}

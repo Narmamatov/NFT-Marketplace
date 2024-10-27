@@ -1,0 +1,369 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+  font-family: sans-serif;
+  color: white;
+}
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  width: 110%;
+  z-index: 50;
+  top: 0;
+  padding: 2% 4%;
+  backdrop-filter: blur(1vh);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0;
+  background-color: #3b3b3b blur(2vh);
+}
+.burger {
+  position: relative;
+  margin-top: -20px;
+}
+.open {
+  position: absolute;
+  display: none;
+}
+.close {
+  position: absolute;
+  display: none;
+}
+button:hover {
+  background: cyan;
+  box-shadow: 0 0 50px #1e9bff, 0 0 50px #1e9bff, 0 0 5px #1e9bff,
+    0 0 10px #1e9bff, 0 0 50px #1e9bff;
+  cursor: pointer;
+}
+nav {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+nav a:active {
+  transform: scale(0.9);
+  color: red;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s ease-in-out;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav span {
+  font-size: 28px;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #a259ff;
+}
+#browse {
+  margin-top: 130px;
+}
+
+.browse h1 {
+  font-size: 51px;
+  font-weight: 600;
+  color: white;
+}
+.browse p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35.2px;
+  margin: 20px 0;
+  color: white;
+}
+.browse-icon {
+  position: absolute;
+  right: 100px;
+  top: 280px;
+  color: white;
+}
+.browse-input input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid #7f45ff;
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #858584;
+}
+
+.browse-link {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.browse-link a {
+  color: #858584;
+  font-size: 22px;
+  font-weight: 600;
+}
+.browse-link a:hover {
+  color: white;
+}
+
+#nft {
+  background-color: #2c2f33;
+}
+
+.nft-nav {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3b3b3b;
+  font-size: 22px;
+  font-weight: 600;
+  color: #858584;
+  transition: 0.7s;
+}
+.nft-nav p:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.nft-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.nft-card {
+  background-color: #23272a;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.nft-m {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.nft-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.nft-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.nft-info p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #b0b0b0;
+}
+
+.nft-dis {
+  display: flex;
+  justify-content: space-between;
+}
+.nft-dis p span {
+  color: white;
+  font-size: 18px;
+}
+
+.nft-ava {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.nft-ava img {
+  width: 24px;
+  height: 24px;
+}
+
+#footer {
+  background-color: #3b3b3b;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid #858584;
+}
+.fNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 40px;
+}
+.fNav a {
+  color: #cccccc;
+  font-weight: 600;
+}
+.footIcons {
+  display: flex;
+  color: #cccccc;
+  gap: 10px;
+}
+.footIcons span {
+  font-size: clamp(10px, 6vw, 24px);
+}
+.footNav2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footNav2 a:first-child {
+  font-weight: 600;
+  font-size: clamp(13px, 4vw, 22px);
+  color: #ffffff;
+}
+.footNav2 a {
+  font-size: clamp(10px, 4vw, 16px);
+  color: #cccccc;
+}
+.footInput {
+  display: flex;
+}
+.footInput input {
+  width: 220px;
+  padding: 13px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+.footInput button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #a259ff;
+  color: white;
+  margin-left: -40px;
+  margin-top: 1px;
+  font-size: 18px;
+  gap: 20px;
+  height: 48px;
+  width: 204px;
+  border-radius: 20px;
+}
+.address {
+  width: 61%;
+  margin: auto;
+  margin-top: 15px;
+}
+@media (max-width: 1100px) {
+  .browse-input input {
+    font-size: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 100%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footInput {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .footInput button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #a259ff;
+    color: white;
+    margin-left: 0px;
+    margin-top: 1px;
+    font-size: 18px;
+    gap: 20px;
+    height: 48px;
+    width: 250px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 625px) {
+  #header {
+    width: 95%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+}
+@media (max-width: 625px) {
+  #header {
+    width: 95%;
+    justify-content: space-around;
+    gap: 10%;
+  }
+}

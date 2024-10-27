@@ -1,0 +1,379 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #2b2b2b;
+  font-family: sans-serif;
+  color: white;
+}
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+}
+#header {
+  width: 110%;
+  z-index: 50;
+  top: 0;
+  padding: 2% 4%;
+  backdrop-filter: blur(1vh);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 0;
+  background-color: #3b3b3b blur(2vh);
+}
+.burger {
+  position: relative;
+  margin-top: -20px;
+}
+.open {
+  position: absolute;
+  display: none;
+}
+.close {
+  position: absolute;
+  display: none;
+}
+button:hover {
+  background: cyan;
+  box-shadow: 0 0 50px #1e9bff, 0 0 50px #1e9bff, 0 0 5px #1e9bff,
+    0 0 10px #1e9bff, 0 0 50px #1e9bff;
+  cursor: pointer;
+}
+nav {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+nav a:active {
+  transform: scale(0.9);
+  color: red;
+}
+button:active {
+  transform: scale(0.9);
+  transition: 0.1s ease-in-out;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav span {
+  font-size: 28px;
+}
+nav button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  background-color: #a259ff;
+}
+
+#wallet {
+  margin-top: 130px;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.wallet-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wallet-content h1 {
+  font-size: 51px;
+  font-weight: 600;
+  color: white;
+}
+
+.wallet-content p {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 35.2px;
+  color: white;
+}
+
+.wallet-btns button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60%;
+  height: 60px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #a259ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.wallet-btns button img {
+  margin-right: 20px;
+  margin-left: 90px;
+  width: 10%;
+  height: auto;
+}
+#footer {
+  background-color: #3b3b3b;
+  padding: 20px;
+  margin: 10px 0px;
+}
+.footer {
+  width: 70%;
+  margin: auto;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid #858584;
+}
+.fNav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  line-height: 40px;
+}
+.fNav a {
+  color: #cccccc;
+  font-weight: 600;
+}
+.footIcons {
+  display: flex;
+  color: #cccccc;
+  gap: 10px;
+}
+.footIcons span {
+  font-size: clamp(10px, 6vw, 24px);
+}
+.footNav2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+}
+.footNav2 a:first-child {
+  font-weight: 600;
+  font-size: clamp(13px, 4vw, 22px);
+  color: #ffffff;
+}
+.footNav2 a {
+  font-size: clamp(10px, 4vw, 16px);
+  color: #cccccc;
+}
+.footInput {
+  display: flex;
+}
+.footInput input {
+  width: 220px;
+  padding: 13px;
+  font-size: 17px;
+  border-radius: 20px;
+}
+.footInput button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #a259ff;
+  color: white;
+  margin-left: -40px;
+  margin-top: 1px;
+  font-size: 18px;
+  gap: 20px;
+  height: 48px;
+  width: 204px;
+  border-radius: 20px;
+}
+.address {
+  width: 61%;
+  margin: auto;
+  margin-top: 15px;
+}
+@media (max-width: 1255px) {
+  .wallet {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+  }
+}
+@media (max-width: 1170px) {
+  .wallet-btns button img {
+    margin-right: 20px;
+    margin-left: 0px;
+    width: 10%;
+    height: auto;
+  }
+  .wallet-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wallet-btns button img {
+    width: 34px;
+  }
+}
+@media (max-width: 1094px) {
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 100%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .wallet-content {
+    width: 400px;
+  }
+  .wallet-btns button {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1100px) {
+  .browse-input input {
+    font-size: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+  #header {
+    width: 100%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    position: fixed;
+    right: 60px;
+    top: 60px;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    z-index: 100;
+  }
+  nav a:hover {
+    background-color: #a259ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footInput {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .footInput button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #a259ff;
+    color: white;
+    margin-left: 0px;
+    margin-top: 1px;
+    font-size: 18px;
+    gap: 20px;
+    height: 48px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .w-main {
+    width: 500px;
+  }
+}
+@media (max-width: 870px) {
+  .wallet {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    flex-direction: column-reverse;
+  }
+  .w-main {
+    width: 400px;
+  }
+}
+@media (max-width: 635px) {
+  #header {
+    width: 94%;
+    justify-content: space-around;
+    gap: 30%;
+  }
+}
+@media (max-width: 450px) {
+  #header {
+    width: 92%;
+    justify-content: space-around;
+    gap: 20%;
+  }
+}
+@media (max-width: 440px) {
+  .wallet-content {
+    width: 300px;
+  }
+  .w-main {
+    width: 300px;
+  }
+}
